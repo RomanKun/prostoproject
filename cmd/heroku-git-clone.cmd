@@ -1,1 +1,1 @@
-heroku git:clone -a gentle-basin-69722
+heroku git:clone -a <heroku-deploy-name>
