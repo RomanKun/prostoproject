@@ -1,0 +1,22 @@
+{
+  "name": "estjsrkjsapp",
+  "description": "ExtJS app",
+  "main": "server.js",
+  "authors": [
+    "Kunitsyn Roman"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "latest",
+    "font-awesome": "latest"
+  }
+}
