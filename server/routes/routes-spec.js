@@ -1,4 +1,4 @@
-router("/api")
+app.route("/api")
 .get(apiGet)
 .post(apiPost)
 .put(apiPut)

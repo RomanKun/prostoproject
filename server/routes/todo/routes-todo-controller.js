@@ -1,78 +1,78 @@
 module.exports = function() {
 	
 	var TodoController = {
-		apiGetAllTodos: apiGetAllTodos,
-		apiPostNewTodo: apiPostNewTodo,
-		apiDeleteAllTodos: apiDeleteAllTodos,
-		apiGetTodoById: apiGetTodoById,
-		apiUpdateTodoById: apiUpdateTodoById,
-		apiDeleteTodoById: apiDeleteTodoById
+		GetAllTodos: GetAllTodos,
+		PostNewTodo: PostNewTodo,
+		DeleteAllTodos: DeleteAllTodos,
+		GetTodoById: GetTodoById,
+		UpdateTodoById: UpdateTodoById,
+		DeleteTodoById: DeleteTodoById
 	};
 
 	return TodoController;
 };
 
-function apiGetAllTodos(req, res, next) {
-	console.log("-- apiGetAllTodos. ");
+function GetAllTodos(req, res, next) {
+	console.log("-- GetAllTodos. ");
 	console.dir(req.params);
 	console.dir(req.body);
 	res.json({
-		method: "apiGetAllTodos",
+		method: "GetAllTodos",
 		params: req.params,
 		body: req.body
 	});
 }
 
-function apiPostNewTodo(req, res, next) {
-	console.log("-- apiPostNewTodo. ");
+function PostNewTodo(req, res, next) {
+	console.log("-- PostNewTodo. ");
 	console.dir(req.params);
 	console.dir(req.body);
 	res.json({
-		method: "apiPostNewTodo",
+		method: "PostNewTodo",
 		params: req.params,
 		body: req.body
 	});
 }
 
-function apiDeleteAllTodos(req, res, next) {
-	console.log("-- apiDeleteAllTodos. ");
+function DeleteAllTodos(req, res, next) {
+	console.log("-- DeleteAllTodos. ");
 	console.dir(req.params);
 	console.dir(req.body);
 	res.json({
-method: "apiDeleteAllTodos",
+		method: "DeleteAllTodos",
 		params: req.params,
 		body: req.body
 	});
 }
 
-function apiGetTodoById(req, res, next) {
-	console.log("-- apiGetTodoById. ");
+function GetTodoById(req, res, next) {
+	console.log("-- GetTodoById. ");
 	console.dir(req.params);
 	console.dir(req.body);
 	res.json({
-		method: "apiGetTodoById",
+		method: "GetTodoById",
 		params: req.params,
 		body: req.body
 	});
 }
 
-function apiUpdateTodoById(req, res, next) {
-	console.log("-- apiUpdateTodoById. ");
+function UpdateTodoById(req, res, next) {
+	console.log("-- UpdateTodoById. ");
 	console.dir(req.params);
 	console.dir(req.body);
 	res.json({
-		method: "apiUpdateTodoById",
+		method: "UpdateTodoById",
 		params: req.params,
 		body: req.body
 	});
 }
 
-function apiDeleteTodoById(req, res, next) {
-	console.log("-- apiDeleteTodoById. ");
+function DeleteTodoById(req, res, next) {
+	console.log("-- DeleteTodoById. ");
 	console.dir(req.params);
 	console.dir(req.body);
 	res.json({
-		method: "apiDeleteTodoById",
+		method: "DeleteTodoById",
 		params: req.params,
 		body: req.body
 	});
