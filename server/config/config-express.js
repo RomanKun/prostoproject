@@ -7,7 +7,7 @@ var bodyParser = require("body-parser");
 
 module.exports = function (app, config) {
 
-	app.set("views", path.join(config.rootPath, "public", "app"));
+	app.set("views", path.join(config.rootPath, "public"));
 	app.set("view engine", "jade");
 	app.use(favicon(path.join(config.rootPath, "public", "favicon.ico")));
 	app.use(logger("dev"));
