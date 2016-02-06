@@ -1,6 +1,6 @@
 (function() {
 	
-	"use strict";
+	// "use strict";
 
 	console.log("-- Start Viewport.js ");
 
@@ -14,21 +14,21 @@
 		"App01.view.SongInfoView"
 		],
 		layout: "fit",
-		initComponent: initApp01Viewport
+		initComponent: initViewport
 	});
 
 
-	function initApp01Viewport() {
+	function initViewport() {
 		
-		console.log("-- initApp01Viewport. ");
+		console.log("-- initViewport. ");
 
-		this.items = initItems();
+		this.items = getItems();
 		this.callParent();
 
 	}
 
 
-	function initItems() {
+	function getItems() {
 
 		console.log("-- initItems");
 

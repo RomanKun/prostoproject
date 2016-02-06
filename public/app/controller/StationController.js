@@ -1,14 +1,22 @@
 (function() {
 
-	"use strict";
+	// "use strict";
 
 	console.log("-- Start StationController.js ");
 
 	Ext.define("App01.controller.StationController", {
 		extend: "Ext.app.Controller",
 		init: initStationController,
-		onStationSelect: fireStationSelect
+		onStationSelect: fireStationSelect,
+		initComponent: initStationController2
 	});
+
+
+	function initStationController2() {
+
+		console.log("-- initStationController2. ");
+		
+	}
 
 
 	function initStationController() {

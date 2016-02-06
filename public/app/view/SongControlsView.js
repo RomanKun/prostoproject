@@ -1,12 +1,20 @@
 (function(){
 
-	"use strict";
+	// "use strict";
 	
 	console.log("-- Start SongControlsView.js ");
 	
 	Ext.define("App01.view.SongControlsView", {
 		extend: "Ext.Container",
-		alias: "widget.songcontrols"
+		alias: "widget.songcontrols",
+		initComponent: initSongControlsView
 	});
+
+
+	function initSongControlsView() {
+
+		console.log("-- initSongControlsView. ");
+		
+	}
 
 })();

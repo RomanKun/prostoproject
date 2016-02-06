@@ -1,6 +1,6 @@
 (function() {
 	
-	"use strict";
+	// "use strict";
 
 	console.log("-- Start RecentlyPlayedScrollerView.js");
 	
@@ -8,7 +8,15 @@
 		extend: "Ext.view.View",
 		alias: "widget.recentlyplayedscroller",
 		itemTpl: "<div></div>",
-		store: "ResentSong"
+		store: "RecentSongStore",
+		initComponent: initRecentSongsScrollerView
 	});
+
+
+	function initRecentSongsScrollerView() {
+
+		console.log("-- initRecentSongsScrollerView. ");
+		
+	}
 
 })();
