@@ -8,8 +8,8 @@
 		extend: "Ext.container.Viewport",
 		layout: "fit",
 		requires: [
-		"TestApp.view.CrudView",
-		"TestApp.view.Jumbotron",
+		"TestApp.view.CrudControlsView",
+		"TestApp.view.JumbotronView",
 		"TestApp.view.TestView_02",
 		"TestApp.view.TestView_03",
 		"TestApp.view.TestView_04",
@@ -29,20 +29,20 @@
 				align: "stretch"
 			},
 			items: [{
+				xtype: "jumbotronView"
+			},
+			{
 				xtype: "panel",
 				title: "Test application",
 				html: "Test app is running"
 			},
 			{
-				xtype: "crudview"
-			},
-			{
-				xtype: "jumbotron"
+				xtype: "crudControlsView"
 			}]
 		};
 
 		this.callParent();
 	}
 
-	
+
 })();

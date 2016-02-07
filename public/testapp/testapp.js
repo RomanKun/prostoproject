@@ -46,6 +46,7 @@ function launchTestApp() {
 	Ext.tip.QuickTipManager.init();
 	this.callParent();
 	document.body.classList.toggle("loaded");
+	console.log("%c-- App load success. Have a nice day. ", "background: rgba(0, 0, 175, 0.5);");
 }
 
 function loadAllDependencies() {
@@ -76,8 +77,8 @@ function loadAllDependencies() {
 	Ext.require("TestApp.controller.TestController_05");
 	Ext.require("TestApp.controller.TestController_06");
 
-	Ext.require("TestApp.view.CrudView");
-	Ext.require("TestApp.view.Jumbotron");
+	Ext.require("TestApp.view.CrudControlsView");
+	Ext.require("TestApp.view.JumbotronView");
 	Ext.require("TestApp.view.TestView_02");
 	Ext.require("TestApp.view.TestView_03");
 	Ext.require("TestApp.view.TestView_04");

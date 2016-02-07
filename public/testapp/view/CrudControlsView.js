@@ -2,21 +2,21 @@
 
 	// "use strict";
 
-	console.log("-- Start CrudView.js ");
+	console.log("-- Start CrudControlsView.js ");
 
-	Ext.define("TestApp.view.CrudView", {
+	Ext.define("TestApp.view.CrudControlsView", {
 		extend: "Ext.panel.Panel",
-		alias: "widget.crudview",
-		initComponent: initCrudView
+		alias: "widget.crudControlsView",
+		initComponent: initCrudControlsView
 	});
 
 
-	function initCrudView() {
+	function initCrudControlsView() {
 		
-		console.log("-- initCrudView. ");
+		console.log("-- initCrudControlsView. ");
 		
 		this.items = {
-			title: "CRUD view",
+			title: "CRUD controls",
 			layout: {
 				type: "hbox",
 				align: "left"
