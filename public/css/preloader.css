@@ -1,0 +1,132 @@
+#loader-wrapper {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1001;
+}
+
+#loader-wrapper * {
+	box-sizing: border-box;
+}
+
+#loader-wrapper > img {
+	position: relative;
+	display: block;
+	height: 60px;
+	width: 60px;
+	z-index: 1050;
+	left: 50%;
+	top: 50%;
+	margin: -105px 0px 0px -30px;
+}
+
+#loader {
+	display: block;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0px 0px -75px;
+	border: 3px solid transparent;
+	border-radius: 50%;
+	border-top-color: black;
+	border-bottom-color: black;
+	z-index: 1500; 
+	animation: spin 4s linear infinite;
+}
+
+#loader:before {
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	right: 15px;
+	bottom: 15px;
+	border: 3px solid transparent;
+	border-radius: 50%;
+	border-top-color: red;
+	border-bottom-color: red;
+	animation: spin 3s linear infinite;
+}
+
+#loader:after {
+	content: "";
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	right: 30px;
+	bottom: 30px;
+	border: 3px solid transparent;
+	border-radius: 50%;
+	border-top-color: black;
+	border-bottom-color: black;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+#loader-wrapper .loader-section {
+	position: fixed;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background: rgb(253, 253, 254);;
+	z-index: 1000;
+}
+
+#loader-wrapper .loader-section.section-left {
+	left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+	right: 0;
+}
+
+.loaded #loader-wrapper .loader-section.section-left {
+	transform: translateX(-100%);
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+	transform: translateX(100%);
+}
+
+.loaded #loader-wrapper {
+	visibility: hidden;
+}
+
+.loaded #loader {
+	visibility: hidden;
+	-webkit-transition: all 1s ease-out; 
+	transition: all 1s ease-out;
+}
+
+.loaded #loader-wrapper .loader-section.section-right,
+.loaded #loader-wrapper .loader-section.section-left {			
+	-webkit-transition: all 1s 1s ease-out; 
+	transition: all 1s 1s ease-out;
+}
+
+.loaded #loader-wrapper {
+	-webkit-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	transform: translateY(-100%);			
+	-webkit-transition: all 2s 2s ease-out; 
+	transition: all 2s 2s ease-out;
+}
+
+.loaded img {
+	opacity: 0;
+	transition: opacity 1s 1s ease-out;
+}

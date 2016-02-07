@@ -17,5 +17,6 @@ module.exports = function (app, config) {
 
 	app.use("/public", express.static(path.join(config.rootPath, "public")));
 	app.use("/app", express.static(path.join(config.rootPath, "public", "app")));
+	app.use("/testapp", express.static(path.join(config.rootPath, "public", "testapp")));
 
 };

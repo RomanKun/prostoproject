@@ -10,6 +10,10 @@ html
         link(rel="shortcut icon", href="/public/favicon.ico", type="image/x-icon")
         include styles
     body
-        #fb-root.fb_reset
+        #loader-wrapper
+            #loader
+            img(src="/public/favicon.ico")
+            .loader-section.section-left
+            .loader-section.section-right
         block main-content
         include scripts
