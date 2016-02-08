@@ -11,7 +11,7 @@ Ext.application({
 	enableQuickTips : true,
 	models: [
 	"CardModel",
-	"TestModel_01",
+	"BookModel",
 	"TestModel_02",
 	"TestModel_03",
 	"TestModel_04",
@@ -20,7 +20,7 @@ Ext.application({
 	],
 	stores: [
 	"CardsStore",
-	"TestStore_01",
+	"BooksStore",
 	"TestStore_02",
 	"TestStore_03",
 	"TestStore_04",
@@ -54,7 +54,7 @@ function loadAllDependencies() {
 	console.log("-- loadAllDependencies. ");
 
 	Ext.require("TestApp.model.CardModel");
-	Ext.require("TestApp.model.TestModel_01");
+	Ext.require("TestApp.model.BookModel");
 	Ext.require("TestApp.model.TestModel_02");
 	Ext.require("TestApp.model.TestModel_03");
 	Ext.require("TestApp.model.TestModel_04");
@@ -62,7 +62,7 @@ function loadAllDependencies() {
 	Ext.require("TestApp.model.TestModel_06");
 
 	Ext.require("TestApp.store.CardsStore");
-	Ext.require("TestApp.store.TestStore_01");
+	Ext.require("TestApp.store.BooksStore");
 	Ext.require("TestApp.store.TestStore_02");
 	Ext.require("TestApp.store.TestStore_03");
 	Ext.require("TestApp.store.TestStore_04");
@@ -79,7 +79,7 @@ function loadAllDependencies() {
 
 	Ext.require("TestApp.view.CrudControlsView");
 	Ext.require("TestApp.view.JumbotronView");
-	Ext.require("TestApp.view.TestView_02");
+	Ext.require("TestApp.view.BookListView");
 	Ext.require("TestApp.view.TestView_03");
 	Ext.require("TestApp.view.TestView_04");
 	Ext.require("TestApp.view.TestView_05");

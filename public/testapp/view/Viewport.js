@@ -10,7 +10,7 @@
 		requires: [
 		"TestApp.view.CrudControlsView",
 		"TestApp.view.JumbotronView",
-		"TestApp.view.TestView_02",
+		"TestApp.view.BookListView",
 		"TestApp.view.TestView_03",
 		"TestApp.view.TestView_04",
 		"TestApp.view.TestView_05",
@@ -38,6 +38,9 @@
 			},
 			{
 				xtype: "crudControlsView"
+			}, 
+			{
+				xtype: "bookListView"
 			}]
 		};
 

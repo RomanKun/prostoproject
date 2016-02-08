@@ -34,6 +34,13 @@
 			_self.isApi();
 		}
 
+		if (appType === "BooksStore") {
+
+			console.log("%c-- Load BooksStore from BooksData.json", "background: red;");
+			return { url: "/public/testdata/BooksData.json" };
+
+		}
+
 		return {
 			url: "/api/test/test"
 		};
