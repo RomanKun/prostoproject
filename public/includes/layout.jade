@@ -10,10 +10,6 @@ html
         link(rel="shortcut icon", href="/public/favicon.ico", type="image/x-icon")
         include styles
     body
-        #loader-wrapper
-            #loader
-            img(src="/public/favicon.ico")
-            .loader-section.section-left
-            .loader-section.section-right
+        include preloader
         block main-content
         include scripts

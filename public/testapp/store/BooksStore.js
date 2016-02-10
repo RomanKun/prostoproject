@@ -9,7 +9,7 @@
 		requires: "TestApp.model.BookModel",
 		model: "TestApp.model.BookModel",
 		storeId: "idBooksStore",
-		autoLoad: true,
+		autoLoad: false,
 		proxy: {
 			type: "ajax",
 			url: (rkjs.apiProvider("Store", "BooksStore", null)).url,
