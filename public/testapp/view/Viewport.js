@@ -11,7 +11,7 @@
 		"TestApp.view.CrudControlsView",
 		"TestApp.view.JumbotronView",
 		"TestApp.view.BookListView",
-		"TestApp.view.TestView_03",
+		"TestApp.view.StudentView",
 		"TestApp.view.TestView_04",
 		"TestApp.view.TestView_05",
 		"TestApp.view.TestView_06"
@@ -41,6 +41,9 @@
 			}, 
 			{
 				xtype: "bookListView"
+			},
+			{
+				xtype: "testview03"
 			}]
 		};
 

@@ -12,7 +12,7 @@ Ext.application({
 	models: [
 	"CardModel",
 	"BookModel",
-	"TestModel_02",
+	"StudentModel",
 	"TestModel_03",
 	"TestModel_04",
 	"TestModel_05",
@@ -55,7 +55,7 @@ function loadAllDependencies() {
 
 	Ext.require("TestApp.model.CardModel");
 	Ext.require("TestApp.model.BookModel");
-	Ext.require("TestApp.model.TestModel_02");
+	Ext.require("TestApp.model.StudentModel");
 	Ext.require("TestApp.model.TestModel_03");
 	Ext.require("TestApp.model.TestModel_04");
 	Ext.require("TestApp.model.TestModel_05");
@@ -80,7 +80,7 @@ function loadAllDependencies() {
 	Ext.require("TestApp.view.CrudControlsView");
 	Ext.require("TestApp.view.JumbotronView");
 	Ext.require("TestApp.view.BookListView");
-	Ext.require("TestApp.view.TestView_03");
+	Ext.require("TestApp.view.StudentView");
 	Ext.require("TestApp.view.TestView_04");
 	Ext.require("TestApp.view.TestView_05");
 	Ext.require("TestApp.view.TestView_06");

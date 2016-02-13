@@ -6,8 +6,8 @@
 
 	Ext.define("TestApp.store.TestStore_02", {
 		extend: "Ext.data.Store",
-		requires: "TestApp.model.TestModel_02",
-		model: "TestApp.model.TestModel_02",
+		requires: "TestApp.model.StudentModel",
+		model: "TestApp.model.StudentModel",
 		storeId: "idTestStore_02",
 		autoLoad: false,
 		proxy: {
