@@ -28,7 +28,7 @@ Ext.application({
 	"TestStore_06"
 	],
 	controllers: [
-	"TestController_00",
+	"StudentController",
 	"TestController_01",
 	"TestController_02",
 	"TestController_03",
@@ -69,7 +69,7 @@ function loadAllDependencies() {
 	Ext.require("TestApp.store.TestStore_05");
 	Ext.require("TestApp.store.TestStore_06");
 
-	Ext.require("TestApp.controller.TestController_00");
+	Ext.require("TestApp.controller.StudentController");
 	Ext.require("TestApp.controller.TestController_01");
 	Ext.require("TestApp.controller.TestController_02");
 	Ext.require("TestApp.controller.TestController_03");

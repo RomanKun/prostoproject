@@ -43,7 +43,7 @@
 				xtype: "bookListView"
 			},
 			{
-				xtype: "testview03"
+				xtype: "studentview"
 			}]
 		};
 
