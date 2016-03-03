@@ -47,7 +47,7 @@
 			}]
 		};
 		
-		this.callParent();
+		this.callParent(arguments);
 	}
 	
 })();
