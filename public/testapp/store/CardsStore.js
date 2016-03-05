@@ -17,7 +17,7 @@
 		}],
 		proxy: {
 			type: "ajax",
-			url: (rkjs.apiProvider("Store", "CardsStore", null)).url,
+			url: (rk.apiProvider("Store", "CardsStore", null)).url,
 			reader: {
 				type: "json",
 				root: "result"

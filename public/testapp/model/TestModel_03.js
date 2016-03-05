@@ -20,12 +20,12 @@
 		}],
 		proxy: {
 			type: "ajax",
-			url: rkjs.apiProvider("model", "TestModel_03", null).url,
+			url: rk.apiProvider("model", "TestModel_03", null).url,
 			api: {
-				create: (rkjs.apiProvider("model", "TestModel_03", "create")).url,
-				read: (rkjs.apiProvider("model", "TestModel_03", "read")).url,
-				update: (rkjs.apiProvider("model", "TestModel_03", "update")).url,
-				destroy: (rkjs.apiProvider("model", "TestModel_03", "destroy")).url
+				create: (rk.apiProvider("model", "TestModel_03", "create")).url,
+				read: (rk.apiProvider("model", "TestModel_03", "read")).url,
+				update: (rk.apiProvider("model", "TestModel_03", "update")).url,
+				destroy: (rk.apiProvider("model", "TestModel_03", "destroy")).url
 			},
 			reader: {
 				type: "json",

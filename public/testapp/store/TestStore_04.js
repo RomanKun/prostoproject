@@ -12,7 +12,7 @@
 		autoLoad: false,
 		proxy: {
 			type: "ajax",
-			url: (rkjs.apiProvider("Store", "TestStore_04", null)).url,
+			url: (rk.apiProvider("Store", "TestStore_04", null)).url,
 			reader: {
 				type: "json",
 				root: "result"

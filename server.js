@@ -11,6 +11,7 @@ require("./server/config/config-express")(app, config);
 console.log("-- Config routes. ");
 require("./server/routes/routes.js")(app);
 
+console.log("-- Config error handling. ");
 require("./server/config/config-express-error-handling.js")(app);
 
 app.listen(config.port);

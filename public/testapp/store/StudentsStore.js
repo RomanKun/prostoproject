@@ -2,17 +2,17 @@
 
 	//"use strict";
 
-	console.log("-- Start TestStore_02.js ");
+	console.log("-- Start StudentsStore.js ");
 
-	Ext.define("TestApp.store.TestStore_02", {
+	Ext.define("TestApp.store.StudentsStore", {
 		extend: "Ext.data.Store",
 		requires: "TestApp.model.StudentModel",
 		model: "TestApp.model.StudentModel",
-		storeId: "idTestStore_02",
+		storeId: "idStudentsStore",
 		autoLoad: false,
 		proxy: {
 			type: "ajax",
-			url: (rkjs.apiProvider("Store", "TestStore_02", null)).url,
+			url: (rk.apiProvider("Store", "StudentsStore", null)).url,
 			reader: {
 				type: "json",
 				root: "result"

@@ -7,5 +7,5 @@ module.exports = function (app) {
 		res.render("index");
 	});
 
-	require("./todo/routes-todo.js")(app);
+	require("./todo/api-todo.js")(app);
 };

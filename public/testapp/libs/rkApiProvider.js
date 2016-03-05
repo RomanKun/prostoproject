@@ -2,25 +2,25 @@
 
 	//"use strict";
 
-	console.log("-- Start rkjs.js ");
+	console.log("-- Start rkApiProvider.js ");
 
-	if (typeof rkjs === "undefined") {
-		console.log("-- Connect rkjs lib. ");
-		this.rkjs = {
+	if (typeof rk === "undefined") {
+		console.log("-- Connect rk lib. ");
+		this.rk = {
 			apiProvider: apiProvider
 		};
 	} 
-	else if (typeof rkjs.apiProvider === "undefined") {
-		console.log("-- Attach to rkjs lib new functionality. ");
-		rkjs.apiProvider = apiProvider;
+	else if (typeof rk.apiProvider === "undefined") {
+		console.log("-- Attach to rk lib new functionality. ");
+		rk.apiProvider = apiProvider;
 	} else {
 		console.log("-- You already have what you need. ");
 	}
 
-	function apiProvider(appClass, appType, apiOpr) {
+	function apiProvider(callerType, inctance, apiOpr) {
 		console.log("%c-- apiProvider. ", "color: green");
-		console.dir(appClass);
-		console.dir(appType);
+		console.dir(callerType);
+		console.dir(inctance);
 		console.dir(apiOpr);
 		
 		var _self = this;
@@ -34,7 +34,7 @@
 			_self.isApi();
 		}
 
-		if (appType === "BooksStore") {
+		if (inctance === "BooksStore") {
 
 			console.log("%c-- Load BooksStore from BooksData.json", "background: red;");
 			return { url: "/public/testdata/BooksData.json" };
